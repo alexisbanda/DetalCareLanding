@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection';
 import ServicesSection from './components/ServicesSection';
 import WhyUsSection from './components/WhyUsSection';
 import TestimonialsSection from './components/TestimonialsSection';
+import BookingSimulator from './components/BookingSimulator';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import Chatbot from './components/Chatbot';
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <ServicesSection />
         <WhyUsSection />
         <TestimonialsSection />
+        <BookingSimulator />
         <ContactForm />
       </main>
       <Footer />
