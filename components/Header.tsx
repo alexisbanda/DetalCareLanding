@@ -10,9 +10,11 @@ const Header: React.FC = () => (
     className="fixed top-0 left-0 z-50 w-full bg-white/80 backdrop-blur-sm shadow-md p-4"
   >
     <div className="container mx-auto flex justify-between items-center flex-wrap">
-      <div className="text-xl md:text-2xl font-bold text-emerald-600">
-        <a href="#" className="hover:text-emerald-800 transition-colors">
-          <span className="font-logo">DentalCare</span>
+      <div className="text-2xl md:text-3xl font-bold">
+        <a href="#" className="transition-colors">
+          <span className="font-logo text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 to-teal-500">
+            DentalCare
+          </span>
         </a>
       </div>
       <nav className="hidden md:flex items-center gap-6">

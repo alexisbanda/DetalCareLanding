@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const HeroSection: React.FC = () => (
   <section className="relative w-full h-screen flex items-center justify-center bg-emerald-50 overflow-hidden pt-20">
-    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-8 z-10">
+    <div className="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-center md:text-left gap-8 z-10">
       <div className="md:w-1/2">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => (
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="text-lg sm:text-xl text-gray-600 mb-8"
+          className="text-lg sm:text-xl text-gray-600 mb-8 max-w-xl mx-auto md:mx-0"
         >
           Odontología de vanguardia con un trato humano y amigable para toda la familia.
         </motion.p>
@@ -37,9 +37,9 @@ const HeroSection: React.FC = () => (
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ type: 'spring', stiffness: 50, delay: 1 }}
-          src="https://picsum.photos/seed/dental/600/600"
+          src="assets/images/dental_care_service.jpg"
           alt="Familia sonriendo en el dentista"
-          className="rounded-3xl shadow-2xl w-full max-w-md h-auto"
+          className="rounded-3xl shadow-2xl w-full max-w-xl h-auto"
         />
       </div>
     </div>

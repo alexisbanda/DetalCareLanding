@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ShieldCheck, Heart } from 'lucide-react';
+import { ShieldCheck, Heart, CircleDollarSign } from 'lucide-react';
 
 const WhyUsSection: React.FC = () => {
   return (
@@ -21,7 +21,7 @@ const WhyUsSection: React.FC = () => {
             <p className="text-lg text-gray-600 mb-8">
               Combinamos la tecnología más avanzada con el trato humano que mereces. Nuestra clínica en Quito, Ecuador, está diseñada para que te sientas cómodo, seguro y feliz.
             </p>
-            <ul className="space-y-4">
+            <ul className="space-y-6">
               <li className="flex items-start gap-4">
                 <ShieldCheck className="text-emerald-500 flex-shrink-0 mt-1" size={32} />
                 <div>
@@ -36,6 +36,13 @@ const WhyUsSection: React.FC = () => {
                   <p className="text-gray-600">Nuestro equipo te hará sentir como en casa, con un enfoque que elimina el miedo al dentista.</p>
                 </div>
               </li>
+              <li className="flex items-start gap-4">
+                <CircleDollarSign className="text-emerald-500 flex-shrink-0 mt-1" size={32} />
+                <div>
+                  <h3 className="font-bold text-lg">Precios Transparentes</h3>
+                  <p className="text-gray-600">Ofrecemos planes de pago y precios claros desde el inicio, sin sorpresas.</p>
+                </div>
+              </li>
             </ul>
           </motion.div>
           <motion.div 
@@ -46,7 +53,7 @@ const WhyUsSection: React.FC = () => {
             transition={{ duration: 0.8, type: 'spring' }}
           >
             <img
-              src="https://picsum.photos/seed/team/600/600"
+              src="assets/images/dental_care.jpg"
               alt="Equipo médico sonriente"
               className="rounded-3xl shadow-2xl w-full max-w-lg h-auto"
             />

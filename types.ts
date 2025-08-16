@@ -6,6 +6,7 @@ export interface Service {
   icon: ReactNode;
   title: string;
   description: string;
+  details?: string;
 }
 
 export interface Testimonial {
